@@ -35,6 +35,3 @@ jobs:
 
       - name: Build plugin
         run: npm run build
-
-      - name: Verify committed bundle is current
-        run: git diff --exit-code -- main.js

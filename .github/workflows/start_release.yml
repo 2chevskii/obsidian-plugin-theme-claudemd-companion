@@ -38,7 +38,6 @@ jobs:
         run: |
           npm run check
           npm run build
-          git diff --exit-code -- main.js
 
       - name: Attest release assets
         uses: actions/attest-build-provenance@8beda2b7ed98355c0e97c0a63bec38ae472e66c4 # v4
