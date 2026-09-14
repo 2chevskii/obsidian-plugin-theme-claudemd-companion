@@ -1,0 +1,135 @@
+body.obsidian-app.claude-theme-companion.claude-auto-hide-status-bar
+  .status-bar::before {
+  content: none;
+  pointer-events: none;
+}
+
+body.obsidian-app.claude-theme-companion.claude-auto-hide-status-bar
+  .status-bar.ctc-status-zone-active {
+  height: 30px;
+  min-height: 30px;
+  max-width: 100%;
+  margin-bottom: 8px;
+  padding-block: 4px;
+}
+
+body.obsidian-app.claude-theme-companion.claude-auto-hide-status-bar
+  .status-bar.ctc-status-zone-active
+  > .status-bar-item {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+  white-space: nowrap;
+}
+
+.ctc-exit-ghost {
+  pointer-events: none;
+  user-select: none;
+}
+
+.prompt-results.ctc-search-animating,
+.setting-search-results.ctc-search-animating {
+  position: relative;
+}
+
+.ctc-search-exit-item {
+  pointer-events: none !important;
+  user-select: none;
+}
+
+.ctc-heading-marker-exit {
+  transform-origin: left center;
+  animation: ctc-heading-marker-out 150ms cubic-bezier(0.34, 0.55, 0.25, 1.08) both !important;
+}
+
+.HyperMD-header.ctc-heading-title-exiting > .cm-header:not(.cm-formatting) {
+  opacity: 0 !important;
+}
+
+.ctc-heading-title-exit {
+  overflow: visible;
+  white-space: pre;
+  transform-origin: left center;
+}
+
+body.claude-theme-companion .modal-container.ctc-modal-exit-ghost .modal-bg {
+  animation: ctc-modal-backdrop-out 170ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+body.claude-theme-companion .modal-container.ctc-modal-exit-ghost .modal,
+body.claude-theme-companion .modal-container.ctc-modal-exit-ghost > .prompt {
+  transform-origin: center;
+  animation: ctc-modal-out 170ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+body.claude-theme-companion > .menu.ctc-menu-exit-ghost,
+body.claude-theme-companion > .suggestion-container.ctc-menu-exit-ghost {
+  transform-origin: center top;
+  animation: ctc-menu-out 125ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+@keyframes ctc-modal-backdrop-out {
+  from {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+  }
+}
+
+@keyframes ctc-modal-out {
+  from {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(6px) scale(0.985);
+  }
+}
+
+@keyframes ctc-menu-out {
+  from {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateY(-4px) scale(0.985);
+  }
+}
+
+@keyframes ctc-heading-marker-out {
+  from {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-3px) scale(0.97);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.claude-theme-companion .modal-container.ctc-modal-exit-ghost .modal-bg,
+  body.claude-theme-companion .modal-container.ctc-modal-exit-ghost .modal,
+  body.claude-theme-companion .modal-container.ctc-modal-exit-ghost > .prompt,
+  body.claude-theme-companion > .menu.ctc-menu-exit-ghost,
+  body.claude-theme-companion > .suggestion-container.ctc-menu-exit-ghost {
+    animation-duration: 1ms;
+  }
+}

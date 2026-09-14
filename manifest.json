@@ -1,0 +1,10 @@
+{
+  "id": "claude-theme-companion",
+  "name": "Claude Theme Companion",
+  "version": "1.0.0",
+  "minAppVersion": "1.10.0",
+  "description": "Behavioral enhancements for the Claude theme.",
+  "author": "2CHEVSKII",
+  "authorUrl": "https://github.com/2chevskii",
+  "isDesktopOnly": false
+}
