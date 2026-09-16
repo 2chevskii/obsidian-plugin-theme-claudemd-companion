@@ -1,9 +1,9 @@
 {
   "id": "claude-theme-companion",
-  "name": "Claude Theme Companion",
+  "name": "Claude.md Theme Companion",
   "version": "1.0.0",
-  "minAppVersion": "1.10.0",
-  "description": "Behavioral enhancements for the Claude theme.",
+  "minAppVersion": "1.10.6",
+  "description": "Adds motion and interaction refinements to the Claude.md theme.",
   "author": "2CHEVSKII",
   "authorUrl": "https://github.com/2chevskii",
   "isDesktopOnly": false

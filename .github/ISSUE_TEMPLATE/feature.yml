@@ -1,0 +1,19 @@
+name: Feature request
+description: Suggest a focused improvement to Claude.md Theme Companion.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What behavioral or visual problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Include references or recordings when they materially clarify the request.
+    validations:
+      required: true

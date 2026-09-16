@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a Claude.md Theme Companion defect.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Obsidian, Claude.md, and companion plugin versions.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Include exact reproduction steps and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: recording
+    attributes:
+      label: Screenshot or recording
+      description: Attach a full-resolution capture when the issue is visual.

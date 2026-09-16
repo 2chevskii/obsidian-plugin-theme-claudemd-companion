@@ -2,9 +2,12 @@
   "name": "claude-theme-companion",
   "version": "1.0.0",
   "private": true,
-  "description": "Behavioral enhancements for the Claude Obsidian theme.",
+  "description": "Motion and interaction refinements for the Claude.md Obsidian theme.",
   "main": "main.js",
   "type": "module",
+  "engines": {
+    "node": "24"
+  },
   "scripts": {
     "check": "npm run lint && npm run typecheck",
     "dev": "node esbuild.config.mjs",

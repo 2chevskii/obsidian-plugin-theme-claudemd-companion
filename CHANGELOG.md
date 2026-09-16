@@ -1,10 +1,10 @@
 # Changelog
 
-All notable changes to Claude Theme Companion are documented here.
+All notable changes to Claude.md Theme Companion are documented here.
 
 ## 1.0.0
 
-- Initial public release.
+- Initial public release of Claude.md Theme Companion.
 - Adds modal and context-menu exit animations.
 - Animates search results and live-preview heading markers.
 - Adds a click-through activation zone for the auto-hidden status bar.

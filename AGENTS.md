@@ -3,9 +3,9 @@
 ## Structure
 
 `src/main.ts` contains the plugin source; `styles.css` supplies companion
-styles. `main.js` is a committed production bundle. `manifest.json` and
-`versions.json` define Obsidian release compatibility. Workflows are in
-`.github/workflows/`.
+styles. `main.js` is a generated production bundle and is not committed.
+`manifest.json` and `versions.json` define Obsidian release compatibility.
+Workflows are in `.github/workflows/`.
 
 ## Commands
 
@@ -21,14 +21,15 @@ Use Node.js 24 via `.nvmrc`.
 Follow `.editorconfig`: UTF-8, LF, final newline, and two-space indentation.
 Use `PascalCase` for types and classes, `camelCase` for functions and members,
 and meaningful uppercase names for constants. Run `npm run check` and `npm run
-build`; commit `main.js` only when it matches the source.
+build`; never commit the generated `main.js`.
 
 ## Releases
 
-Keep the version in `package.json` and `manifest.json` identical, and add the
-same version to `versions.json`. Push a numeric tag matching that version.
-`start_release.yml` creates a draft release containing `main.js`,
-`manifest.json`, and `styles.css`; review its notes and publish it manually.
+Keep the version in `package.json` and `manifest.json` identical. Add a
+`versions.json` entry when the minimum supported Obsidian version changes. Push
+a numeric tag matching the version. `release.yml` validates the tag, builds and
+attests the assets, and publishes a release containing `main.js`,
+`manifest.json`, and `styles.css`.
 
 ## Commits and Pull Requests
 
