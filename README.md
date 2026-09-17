@@ -4,13 +4,13 @@ Small motion and interaction refinements for the
 [Claude.md](https://github.com/2chevskii/obsidian-theme-claudemd) Obsidian
 theme.
 
-[![Latest release](https://img.shields.io/github/v/release/2chevskii/obsidian-plugin-claude-theme-companion?color=c96442)](https://github.com/2chevskii/obsidian-plugin-claude-theme-companion/releases/latest)
+[![Latest release](https://img.shields.io/github/v/release/2chevskii/obsidian-plugin-theme-claudemd-companion?color=c96442)](https://github.com/2chevskii/obsidian-plugin-theme-claudemd-companion/releases/latest)
 [![Obsidian 1.10.6+](https://img.shields.io/badge/Obsidian-1.10.6%2B-7c3aed)](https://obsidian.md)
-[![Build](https://github.com/2chevskii/obsidian-plugin-claude-theme-companion/actions/workflows/main.yml/badge.svg)](https://github.com/2chevskii/obsidian-plugin-claude-theme-companion/actions/workflows/main.yml)
-[![MIT License](https://img.shields.io/github/license/2chevskii/obsidian-plugin-claude-theme-companion?color=c96442)](LICENSE)
+[![Build](https://github.com/2chevskii/obsidian-plugin-theme-claudemd-companion/actions/workflows/main.yml/badge.svg)](https://github.com/2chevskii/obsidian-plugin-theme-claudemd-companion/actions/workflows/main.yml)
+[![MIT License](https://img.shields.io/github/license/2chevskii/obsidian-plugin-theme-claudemd-companion?color=c96442)](LICENSE)
 
 [Install](#install) · [Features](#features) · [Contribute](#contribute) ·
-[Report an issue](https://github.com/2chevskii/obsidian-plugin-claude-theme-companion/issues)
+[Report an issue](https://github.com/2chevskii/obsidian-plugin-theme-claudemd-companion/issues)
 
 ## Features
 
@@ -28,7 +28,7 @@ the active theme.
 Requires **Obsidian 1.10.6 or newer** and the
 [Claude.md theme](https://github.com/2chevskii/obsidian-theme-claudemd).
 
-1. Open [Releases](https://github.com/2chevskii/obsidian-plugin-claude-theme-companion/releases)
+1. Open [Releases](https://github.com/2chevskii/obsidian-plugin-theme-claudemd-companion/releases)
    and download `main.js`, `manifest.json`, and `styles.css` from the latest
    release's **Assets**.
 2. Create a `claude-theme-companion` folder inside your vault's
@@ -53,7 +53,7 @@ those from the latest release.
 
 ## Contribute
 
-Found a rough edge? [Open an issue](https://github.com/2chevskii/obsidian-plugin-claude-theme-companion/issues)
+Found a rough edge? [Open an issue](https://github.com/2chevskii/obsidian-plugin-theme-claudemd-companion/issues)
 with reproduction steps, your Obsidian version, and a recording when the issue
 involves motion. Pull requests are welcome too.
 
