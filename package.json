@@ -1,5 +1,5 @@
 {
-  "name": "claude-theme-companion",
+  "name": "@2chevskii/obsidian-plugin-theme-claudemd-companion",
   "version": "1.0.0",
   "private": true,
   "description": "Motion and interaction refinements for the Claude.md Obsidian theme.",
