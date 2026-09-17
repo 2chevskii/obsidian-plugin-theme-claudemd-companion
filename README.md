@@ -23,6 +23,12 @@ theme.
 The plugin has no settings. Its enhancements activate only while Claude.md is
 the active theme.
 
+> **Warning**
+> This plugin monkey-patches Obsidian modal, menu, and Settings lifecycle
+> methods to add exit animations. It restores its patches when unloaded, but
+> the approach may conflict with other plugins or require adjustment after an
+> Obsidian update.
+
 ## Install
 
 Requires **Obsidian 1.10.6 or newer** and the
@@ -31,14 +37,14 @@ Requires **Obsidian 1.10.6 or newer** and the
 1. Open [Releases](https://github.com/2chevskii/obsidian-plugin-theme-claudemd-companion/releases)
    and download `main.js`, `manifest.json`, and `styles.css` from the latest
    release's **Assets**.
-2. Create a `claude-theme-companion` folder inside your vault's
+2. Create a `claudemd-theme-companion` folder inside your vault's
    `.obsidian/plugins/` directory and place all three files there:
 
    ```text
    Your vault/
    └── .obsidian/
        └── plugins/
-           └── claude-theme-companion/
+           └── claudemd-theme-companion/
                ├── main.js
                ├── manifest.json
                └── styles.css
