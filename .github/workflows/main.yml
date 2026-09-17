@@ -26,10 +26,10 @@ jobs:
       - id: get-version
         run: echo "plugin-version=$(jq -r '.version' manifest.json)" >> "$GITHUB_OUTPUT"
       - run: |
-          tar -czf "Claude.md Theme Companion_${{ steps.get-version.outputs.plugin-version }}.tar.gz" -C dist main.js manifest.json styles.css
+          tar -czf "Claude.md-Theme-Companion_${{ steps.get-version.outputs.plugin-version }}.tar.gz" -C dist main.js manifest.json styles.css
       - uses: actions/upload-artifact@v7
         with:
-          path: Claude.md Theme Companion_${{ steps.get-version.outputs.plugin-version }}.tar.gz
+          path: Claude.md-Theme-Companion_${{ steps.get-version.outputs.plugin-version }}.tar.gz
           archive: false
           if-no-files-found: error
 
