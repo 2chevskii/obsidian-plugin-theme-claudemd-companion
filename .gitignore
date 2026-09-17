@@ -1,4 +1,5 @@
 main.js
+coverage/
 node_modules/
 dist/
 artifacts/
