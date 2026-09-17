@@ -1,7 +1,7 @@
 import type { HeadingMarkerSnapshot } from "./animation-types";
 import { AnimationRegistry } from "./animation-registry";
 import { HEADING_MARKER_EXIT_MS } from "./constants";
-import { isMotionEnabled, removeDuplicateIds, snapshotTextStyle } from "./dom-utils";
+import { isMotionEnabled, removeDuplicateIds, snapshotTextStyle } from "../dom/dom-utils";
 
 const ACTIVE_MARKER_SELECTOR = ".markdown-source-view.is-live-preview .HyperMD-header.cm-active > .cm-formatting-header";
 const HEADING_CONTENT_SELECTOR = ":scope > .cm-header:not(.cm-formatting)";

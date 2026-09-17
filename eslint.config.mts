@@ -10,6 +10,7 @@ export default defineConfig(
     "esbuild.config.mjs",
     "versions.json",
     "main.js",
+    "styles.css",
     "package.json",
     "package-lock.json",
     "tsconfig.json"
@@ -30,7 +31,7 @@ export default defineConfig(
   },
   ...obsidianmd.configs.recommended,
   {
-    files: ["src/**/*.test.ts", "src/test-helpers.ts", "src/obsidian.test-double.ts"],
+    files: ["tests/**/*.test.ts", "tests/test-helpers.ts", "tests/obsidian.test-double.ts"],
     rules: {
       "@microsoft/sdl/no-inner-html": "off",
       "@typescript-eslint/no-implied-eval": "off",

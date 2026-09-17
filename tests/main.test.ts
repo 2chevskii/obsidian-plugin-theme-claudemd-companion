@@ -31,7 +31,7 @@ vi.mock("obsidian", () => {
 
 import { Menu, Modal, SuggestModal } from "obsidian";
 
-import ClaudeThemeCompanion from "./main";
+import ClaudeThemeCompanion from "../src/main";
 import { enableMotion, rect, setRect } from "./test-helpers";
 
 describe("ClaudeThemeCompanion", () => {

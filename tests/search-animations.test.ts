@@ -1,12 +1,12 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { AnimationRegistry } from "./animation-registry";
+import { AnimationRegistry } from "../src/animations/animation-registry";
 import {
   findSearchContext,
   getSearchItemKeys,
   getSearchItems,
   SearchAnimator
-} from "./search-animations";
+} from "../src/animations/search-animations";
 import { installAnimationStubs, rect, setRect } from "./test-helpers";
 
 function createPrompt(): { input: HTMLInputElement; results: HTMLElement } {

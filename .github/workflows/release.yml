@@ -37,15 +37,15 @@ jobs:
       - uses: actions/attest@v4
         with:
           subject-path: |
-            main.js
-            manifest.json
-            styles.css
+            dist/main.js
+            dist/manifest.json
+            dist/styles.css
       - env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release create "${{ steps.get-version.outputs.plugin-version }}" \
             --title "Claude.md Theme Companion ${{ steps.get-version.outputs.plugin-version }}" \
             --generate-notes \
-            main.js \
-            manifest.json \
-            styles.css
+            dist/main.js \
+            dist/manifest.json \
+            dist/styles.css

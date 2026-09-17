@@ -1,7 +1,7 @@
 import type { SearchContext, SearchKind, SearchSnapshot } from "./animation-types";
 import { AnimationRegistry } from "./animation-registry";
 import { SEARCH_EXIT_MS, SEARCH_MOVE_MS } from "./constants";
-import { rectIntersects, removeDuplicateIds } from "./dom-utils";
+import { rectIntersects, removeDuplicateIds } from "../dom/dom-utils";
 
 export class SearchAnimator {
   private readonly generations = new WeakMap<HTMLElement, number>();

@@ -1,3 +1,5 @@
+/* Source stylesheet. The production build emits this as /styles.css. */
+
 body.obsidian-app.claude-theme-companion.claude-auto-hide-status-bar
   .status-bar::before {
   content: none;
@@ -39,7 +41,8 @@ body.obsidian-app.claude-theme-companion.claude-auto-hide-status-bar
 
 .ctc-heading-marker-exit {
   transform-origin: left center;
-  animation: ctc-heading-marker-out 150ms cubic-bezier(0.34, 0.55, 0.25, 1.08) both !important;
+  animation: ctc-heading-marker-out 150ms cubic-bezier(0.34, 0.55, 0.25, 1.08)
+    both !important;
 }
 
 .HyperMD-header.ctc-heading-title-exiting > .cm-header:not(.cm-formatting) {

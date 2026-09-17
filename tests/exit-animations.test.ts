@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { AnimationRegistry } from "./animation-registry";
-import { ExitAnimator, resolveModalContainer } from "./exit-animations";
+import { AnimationRegistry } from "../src/animations/animation-registry";
+import { ExitAnimator, resolveModalContainer } from "../src/animations/exit-animations";
 import { enableMotion, rect, setRect } from "./test-helpers";
 
 describe("ExitAnimator", () => {

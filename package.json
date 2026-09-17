@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Motion and interaction refinements for the Claude.md Obsidian theme.",
-  "main": "main.js",
+  "main": "dist/main.js",
   "type": "module",
   "engines": {
     "node": "24"

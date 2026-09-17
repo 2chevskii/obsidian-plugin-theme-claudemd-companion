@@ -66,8 +66,9 @@ npm run build
 ```
 
 Edit the TypeScript in [`src/`](src/) and companion rules in
-[`styles.css`](styles.css). The production build writes `main.js`; it is a
-generated release asset and is not committed.
+[`src/styles/`](src/styles/). The production build writes `dist/main.js`,
+`dist/manifest.json`, and `dist/styles.css`; they are generated release assets
+and are not committed.
 
 ## License & credits
 

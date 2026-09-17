@@ -1,8 +1,8 @@
-import { AnimationRegistry } from "./animation-registry";
-import { COMPANION_CLASS } from "./constants";
-import { HeadingMarkerAnimator, mutationTouchesHeadingMarker } from "./heading-marker-animations";
-import { isMotionEnabled } from "./dom-utils";
-import { findSearchContext, SearchAnimator } from "./search-animations";
+import { AnimationRegistry } from "../animations/animation-registry";
+import { COMPANION_CLASS } from "../animations/constants";
+import { HeadingMarkerAnimator, mutationTouchesHeadingMarker } from "../animations/heading-marker-animations";
+import { isMotionEnabled } from "../dom/dom-utils";
+import { findSearchContext, SearchAnimator } from "../animations/search-animations";
 
 export class DocumentEffects {
   private readonly attachedDocuments = new WeakSet<Document>();

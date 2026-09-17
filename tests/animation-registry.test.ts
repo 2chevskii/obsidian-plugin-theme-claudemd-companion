@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { AnimationRegistry } from "./animation-registry";
+import { AnimationRegistry } from "../src/animations/animation-registry";
 
 describe("AnimationRegistry", () => {
   it("removes tracked ghosts after their duration", () => {

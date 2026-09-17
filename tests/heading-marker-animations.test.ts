@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { AnimationRegistry } from "./animation-registry";
-import { HeadingMarkerAnimator, mutationTouchesHeadingMarker } from "./heading-marker-animations";
+import { AnimationRegistry } from "../src/animations/animation-registry";
+import { HeadingMarkerAnimator, mutationTouchesHeadingMarker } from "../src/animations/heading-marker-animations";
 import { enableMotion, installAnimationStubs, rect, setRect } from "./test-helpers";
 
 function createHeading(): { root: HTMLElement; line: HTMLElement; marker: HTMLElement; title: HTMLElement } {

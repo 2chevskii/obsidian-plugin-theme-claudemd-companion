@@ -8,7 +8,7 @@ import {
   rectIntersects,
   removeDuplicateIds,
   snapshotTextStyle
-} from "./dom-utils";
+} from "../src/dom/dom-utils";
 import { enableMotion, rect } from "./test-helpers";
 
 describe("DOM utilities", () => {

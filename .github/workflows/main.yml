@@ -23,13 +23,14 @@ jobs:
           node-version-file: package.json
       - run: npm ci
       - run: npm run build
+      - id: get-version
+        run: echo "plugin-version=$(jq -r '.version' manifest.json)" >> "$GITHUB_OUTPUT"
+      - run: |
+          tar -czf "Claude.md Theme Companion_${{ steps.get-version.outputs.plugin-version }}.tar.gz" -C dist main.js manifest.json styles.css
       - uses: actions/upload-artifact@v7
         with:
-          name: claude-md-theme-companion
-          path: |
-            main.js
-            manifest.json
-            styles.css
+          path: Claude.md Theme Companion_${{ steps.get-version.outputs.plugin-version }}.tar.gz
+          archive: false
           if-no-files-found: error
 
   test:

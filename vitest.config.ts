@@ -3,15 +3,15 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
   test: {
     alias: {
-      obsidian: new URL("./src/obsidian.test-double.ts", import.meta.url).pathname
+      obsidian: new URL("./tests/obsidian.test-double.ts", import.meta.url).pathname
     },
     environment: "jsdom",
-    include: ["src/**/*.test.ts"],
+    include: ["tests/**/*.test.ts"],
     restoreMocks: true,
     coverage: {
       provider: "v8",
       include: ["src/**/*.ts"],
-      exclude: ["src/**/*.test.ts", "src/test-helpers.ts", "src/obsidian.test-double.ts"],
+      exclude: ["tests/**"],
       reporter: ["text", "html", "lcov"],
       thresholds: {
         branches: 90,

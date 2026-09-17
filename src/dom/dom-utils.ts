@@ -1,5 +1,5 @@
-import type { TextStyleSnapshot } from "./animation-types";
-import { THEME_MARKER } from "./constants";
+import type { TextStyleSnapshot } from "../animations/animation-types";
+import { THEME_MARKER } from "../animations/constants";
 
 export function isClaudeTheme(doc: Document): boolean {
   return Boolean(doc.defaultView?.getComputedStyle(doc.body).getPropertyValue(THEME_MARKER).trim());

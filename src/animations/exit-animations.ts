@@ -5,7 +5,7 @@ import {
   copyScrollPositions,
   isMotionEnabled,
   removeDuplicateIds
-} from "./dom-utils";
+} from "../dom/dom-utils";
 
 export class ExitAnimator {
   private readonly closingElements = new WeakSet<HTMLElement>();

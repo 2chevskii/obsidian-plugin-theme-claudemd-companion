@@ -1,9 +1,9 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { AnimationRegistry } from "./animation-registry";
-import { DocumentEffects, updateStatusBars } from "./document-effects";
-import { HeadingMarkerAnimator } from "./heading-marker-animations";
-import { SearchAnimator } from "./search-animations";
+import { AnimationRegistry } from "../src/animations/animation-registry";
+import { HeadingMarkerAnimator } from "../src/animations/heading-marker-animations";
+import { SearchAnimator } from "../src/animations/search-animations";
+import { DocumentEffects, updateStatusBars } from "../src/effects/document-effects";
 import { enableMotion, rect, setRect } from "./test-helpers";
 
 describe("document effects", () => {

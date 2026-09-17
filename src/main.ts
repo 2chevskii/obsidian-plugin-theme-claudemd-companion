@@ -1,10 +1,10 @@
 import { Menu, Modal, Plugin, SuggestModal } from "obsidian";
 
-import { AnimationRegistry } from "./animation-registry";
-import { DocumentEffects } from "./document-effects";
-import { ExitAnimator, resolveModalContainer } from "./exit-animations";
-import { HeadingMarkerAnimator } from "./heading-marker-animations";
-import { SearchAnimator } from "./search-animations";
+import { AnimationRegistry } from "./animations/animation-registry";
+import { ExitAnimator, resolveModalContainer } from "./animations/exit-animations";
+import { HeadingMarkerAnimator } from "./animations/heading-marker-animations";
+import { SearchAnimator } from "./animations/search-animations";
+import { DocumentEffects } from "./effects/document-effects";
 
 type AnyMethod = (...args: unknown[]) => unknown;
 
