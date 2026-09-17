@@ -9,7 +9,7 @@ Workflows are in `.github/workflows/`.
 
 ## Commands
 
-Use Node.js 24 via `.nvmrc`.
+Use Node.js 24, pinned in `package.json`.
 
 - `npm ci` installs the locked dependencies.
 - `npm run check` runs ESLint and strict TypeScript checks.
