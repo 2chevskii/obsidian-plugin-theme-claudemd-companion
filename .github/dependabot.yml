@@ -4,6 +4,10 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    # Keep TypeScript within typescript-eslint's supported peer range.
+    ignore:
+      - dependency-name: typescript
+        versions: [">=6.1.0"]
     groups:
       development-dependencies:
         dependency-type: development
