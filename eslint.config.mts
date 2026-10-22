@@ -22,7 +22,7 @@ export default defineConfig(
       },
       parserOptions: {
         projectService: {
-          allowDefaultProject: ["eslint.config.mts", "manifest.json", "vitest.config.ts"]
+          allowDefaultProject: ["eslint.config.mts", "manifest.json", "vitest.config.ts", "tools/*.mjs"]
         },
         tsconfigRootDir: import.meta.dirname,
         extraFileExtensions: [".json"]
@@ -30,6 +30,18 @@ export default defineConfig(
     }
   },
   ...obsidianmd.configs.recommended,
+  {
+    files: ["tools/*.mjs"],
+    languageOptions: { globals: globals.node },
+    rules: {
+      "obsidianmd/no-nodejs-modules": "off",
+      "obsidianmd/rule-custom-message": "off"
+    }
+  },
+  {
+    files: ["tests/version.test.ts"],
+    rules: { "obsidianmd/no-nodejs-modules": "off" }
+  },
   {
     files: ["tests/**/*.test.ts", "tests/test-helpers.ts", "tests/obsidian.test-double.ts"],
     rules: {

@@ -16,9 +16,21 @@ behavior and include a recording when a pull request changes visible motion.
 
 ## Versioning
 
-For each release, update `package.json` and `manifest.json` to the same Semantic
-Versioning value. Add a `versions.json` entry when the minimum supported
-Obsidian version changes.
+Use the version script to update `package.json`, `manifest.json`, the lockfile,
+and the compatibility mapping in `versions.json` together:
+
+```sh
+node tools/version.mjs patch
+node tools/version.mjs minor
+node tools/version.mjs major
+node tools/version.mjs set 2.0.0 --compat 1.11.0
+```
+
+Versions must use numeric `X.Y.Z` format. Without `--compat`, the script keeps
+the current `manifest.json.minAppVersion`. With it, the script updates that
+minimum and writes `"<plugin version>": "<compat version>"` in `versions.json`.
+Existing compatibility entries are preserved. The script works from any
+working directory and does not create commits or tags.
 
 ## Release checklist
 
