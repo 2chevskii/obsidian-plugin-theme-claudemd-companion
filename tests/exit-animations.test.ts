@@ -23,7 +23,8 @@ describe("ExitAnimator", () => {
     expect(ghost?.getAttribute("aria-hidden")).toBe("true");
     expect(ghost?.inert).toBe(true);
     expect(ghost?.querySelectorAll("[id]")).toHaveLength(0);
-    expect(ghost?.style.cssText).toContain("left: 10px");
+    expect(ghost?.style.left).toBe("10px");
+    expect(ghost?.style.top).toBe("20px");
     expect(ghost?.scrollTop).toBe(9);
     expect((ghost?.firstElementChild as HTMLElement).scrollLeft).toBe(11);
     vi.advanceTimersByTime(220);

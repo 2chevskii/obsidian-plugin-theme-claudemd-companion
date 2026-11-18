@@ -64,6 +64,7 @@ describe("DOM utilities", () => {
   it("copies the text style fields used by heading ghosts", () => {
     const element = document.createElement("span");
     element.style.cssText = "color: red; font-family: serif; font-size: 13px; font-style: italic; font-weight: 700; letter-spacing: 2px; line-height: 20px";
+    document.body.append(element);
     expect(snapshotTextStyle(getComputedStyle(element))).toMatchObject({
       color: "rgb(255, 0, 0)",
       fontFamily: "serif",

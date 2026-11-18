@@ -40,7 +40,8 @@ describe("HeadingMarkerAnimator", () => {
     expect(ghost).not.toBeNull();
     expect(ghost?.getAttribute("aria-hidden")).toBe("true");
     expect(ghost?.id).toBe("");
-    expect(ghost?.style.cssText).toContain("left: 10px");
+    expect(ghost?.style.left).toBe("10px");
+    expect(ghost?.style.top).toBe("20px");
     vi.advanceTimersByTime(200);
     expect(ghost?.isConnected).toBe(false);
   });
